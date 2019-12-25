@@ -13,9 +13,9 @@
 # limitations under the License.
 
 cc_library(
-    name = "module_header_26",
+    name = "module_header_release",
     visibility = ["//visibility:public"],
-    deps = ["@emacs_module_header_26//:header"],
+    deps = ["@emacs_module_header_release//:header"],
 )
 
 cc_library(
