@@ -31,3 +31,15 @@ py_binary(
     srcs_version = "PY3",
     visibility = ["@emacs_module_header_master//:__pkg__"],
 )
+
+cc_test(
+    name = "release_test",
+    srcs = ["test.cc"],
+    deps = [":module_header_release"],
+)
+
+cc_test(
+    name = "master_test",
+    srcs = ["test.cc"],
+    deps = [":module_header_master"],
+)
