@@ -14,7 +14,7 @@
 
 cc_library(
     name = "header",
-    srcs = ["emacs-module.h"],
+    hdrs = ["emacs-module.h"],
     # Using an empty include_prefix causes Bazel to emit -I instead of -iquote
     # options for the include directory, so that #include <emacs-module.h>
     # works.
