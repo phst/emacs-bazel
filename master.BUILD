@@ -22,16 +22,9 @@ cc_library(
     visibility = ["//visibility:public"],
 )
 
-VERSIONS = [
-    25,
-    26,
-    27,
-    28,
-]
-
 filegroup(
     name = "snippets",
-    srcs = ["module-env-{}.h".format(ver) for ver in VERSIONS],
+    srcs = glob(["module-env-*.h"]),
 )
 
 genrule(
