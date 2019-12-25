@@ -14,20 +14,6 @@
 
 workspace(name = "eu_phst_emacs")
 
-load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
+load("//:def.bzl", "eu_phst_emacs_repos")
 
-http_archive(
-    name = "emacs_module_header_26",
-    build_file = "@//:release.BUILD",
-    sha256 = "4d90e6751ad8967822c6e092db07466b9d383ef1653feb2f95c93e7de66d3485",
-    strip_prefix = "emacs-26.3/src/",
-    urls = ["https://ftp.gnu.org/gnu/emacs/emacs-26.3.tar.xz"],
-)
-
-http_archive(
-    name = "emacs_module_header_master",
-    build_file = "@//:master.BUILD",
-    sha256 = "22ce644ca8c808425e43243823fb996b05fa824ff93ca82fb86611bfe9b3fe2c",
-    strip_prefix = "emacs-7c5d6a2afc6c23a7fff8456f506ee2aa2d37a3b9/src/",
-    urls = ["https://git.savannah.gnu.org/cgit/emacs.git/snapshot/emacs-7c5d6a2afc6c23a7fff8456f506ee2aa2d37a3b9.tar.gz"],
-)
+eu_phst_emacs_repos()
