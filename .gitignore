@@ -1,0 +1,4 @@
+/bazel-bin
+/bazel-emacs-bazel
+/bazel-out
+/bazel-testlogs
