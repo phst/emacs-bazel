@@ -35,10 +35,10 @@ genrule(
     ],
     outs = ["emacs-module.h"],
     cmd = (
-        "$(location @eu_phst_emacs//:genheader)" +
+        "$(location @phst_emacs//:genheader)" +
         " --template=$(location emacs-module.h.in)" +
         " --output=$@" +
         " -- $(locations :snippets)"
     ),
-    tools = ["@eu_phst_emacs//:genheader"],
+    tools = ["@phst_emacs//:genheader"],
 )

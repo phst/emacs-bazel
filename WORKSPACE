@@ -12,8 +12,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-workspace(name = "eu_phst_emacs")
+workspace(name = "phst_emacs")
 
-load("//:def.bzl", "eu_phst_emacs_repos")
+load("//:def.bzl", "phst_emacs_repos")
 
-eu_phst_emacs_repos()
+phst_emacs_repos()
