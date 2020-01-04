@@ -26,7 +26,7 @@ def eu_phst_emacs_repos():
     http_archive(
         name = "emacs_module_header_master",
         build_file = "@eu_phst_emacs//:master.BUILD",
-        sha256 = "22ce644ca8c808425e43243823fb996b05fa824ff93ca82fb86611bfe9b3fe2c",
-        strip_prefix = "emacs-7c5d6a2afc6c23a7fff8456f506ee2aa2d37a3b9/src/",
-        urls = ["https://git.savannah.gnu.org/cgit/emacs.git/snapshot/emacs-7c5d6a2afc6c23a7fff8456f506ee2aa2d37a3b9.tar.gz"],
+        sha256 = "e80ff4fae6350e295732b40ad74820f1c6ed404547abc7fe57ff7349ecc6d297",
+        strip_prefix = "emacs-52db14b0dc5a93d7a7219917b8f603b14f94f24f/src/",
+        urls = ["https://git.savannah.gnu.org/cgit/emacs.git/snapshot/emacs-52db14b0dc5a93d7a7219917b8f603b14f94f24f.tar.gz"],
     )
