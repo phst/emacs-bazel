@@ -14,4 +14,6 @@
 
 #include <emacs-module.h>
 
-int main() {}
+int main(void) {
+  return 0;
+}

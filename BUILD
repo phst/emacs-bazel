@@ -34,12 +34,12 @@ py_binary(
 
 cc_test(
     name = "release_test",
-    srcs = ["test.cc"],
+    srcs = ["test.c"],
     deps = [":module_header_release"],
 )
 
 cc_test(
     name = "master_test",
-    srcs = ["test.cc"],
+    srcs = ["test.c"],
     deps = [":module_header_master"],
 )
