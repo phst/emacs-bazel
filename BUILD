@@ -32,6 +32,7 @@ py_binary(
     visibility = ["@emacs_module_header_master//:__pkg__"],
 )
 
+# Smoke tests to check whether the header can be included.
 cc_test(
     name = "release_test",
     srcs = ["test.c"],
