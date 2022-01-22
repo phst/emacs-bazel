@@ -36,7 +36,7 @@ genrule(
     outs = ["emacs-module.h"],
     cmd = (
         "$(execpath @phst_emacs//:genheader)" +
-        " --template=$(location emacs-module.h.in)" +
+        " --template=$(execpath emacs-module.h.in)" +
         " --output=$@" +
         " -- $(execpaths :snippets)"
     ),
